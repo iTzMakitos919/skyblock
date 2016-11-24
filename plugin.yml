@@ -23,8 +23,8 @@ permissions:
             default: true
             description: Allows the player to use the create command
           is.command.tp:
-            default: op
-            description: Allows the player to use the home command
+            default: ture
+            description: Allows the player to teleport to other players islands
           is.command.delete:
             default: true
             description: Allows the player to delete their island
