@@ -1,1 +1,5 @@
+LowRand: 1 
+# You can ignore these two 
+HighRand: 500
 
+Worlds: ["SkyBlock1", "SkyBlock2", "SkyBlock3"]
