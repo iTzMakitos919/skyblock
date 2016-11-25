@@ -54,7 +54,7 @@ class Main extends Base implements Listener{
 							$sender->sendMessage(TextFormat::GREEN . "/is create");
 							$sender->sendMessage(TextFormat::GREEN . "/is home");
 							$sender->sendMessage(TextFormat::GREEN . "/is sethome");
-							$sender->sendMessage(TextFormat::GREEN . "/is find");
+							$sender->sendMessage(TextFormat::GREEN . "/is tp");
 							return true;
 						}elseif($args[1] == "2"){
 							$sender->sendMessage("More commands coming soon");
@@ -106,7 +106,7 @@ class Main extends Base implements Listener{
 						return true;
 					}
 				}elseif($args[0] == "find"){
-					if($sender->hasPermission("is") || $sender->hasPermission("is.command") || $sender->hasPermission("is.command.find")){
+					if($sender->hasPermission("is") || $sender->hasPermission("is.command") || $sender->hasPermission("is.command.tp")){
 						if(isset($args[1])){
 							$p = $sender->getServer()->getPlayer($args[1]);
 							if($p instanceof Player){
