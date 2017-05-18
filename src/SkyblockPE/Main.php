@@ -67,11 +67,7 @@ class Main extends Base implements Listener{
 				}elseif($args[0] == "create"){
 					if($sender->hasPermission("is") || $sender->hasPermission("is.command") || $sender->hasPermission("is.command.create")){
 						$senderIs = $this->getDataFolder()."Islands/".$sender->getName().".yml";
-						$playerLevel = $sender->getLevel()->getName();
-						$skyblockWorlds = $this->getConfig()->get("Worlds");
-						if(!(in_array($playerLevel, $skyblockWorlds))){
-							$sender->sendMessage("You aren't in a skyblock world!");
-							return true;
+						
 						}else{
 							if(!(file_exists($senderIs))){
 								$this->makeIsland($sender->getName());
